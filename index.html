@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Rest</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+</head>
+<body>
+    <header class="headContainer">
+        <div class="headFixed">
+            <nav>
+                <h2>Booking Miami</h2>
+            </nav>
+        </div>
+        <div class="headContent">
+            <div class="titleContent">
+                <h2>Cadena de Hoteles en Miami</h2>
+            </div>
+        </div>
+    </header>
+    <div class="hotelOptions">
+        <div class="toogleHotel">
+            <div>
+                <h2>Nuestros Accesos</h2>
+            </div>
+            <div>
+                <label class="switch">
+                    <span class="regular">Regular</span>
+                    <input type="checkbox" id="checkbox" value="toogleHotel">
+                    <span class="slider round"></span>
+                    <span class="premium">Premium</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="selectorHotel">
+        <h2>Cadena de Hoteles en Miami:</h2>
+        <div class="hotelsContainer">
+            <div class="cards">
+                <div class="card">
+                    <h2>Lakewood</h2>
+                    <img src="./img/Lakewood.jpg" alt="">
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Dias de semana $ <span class="precio">110</span></li>
+                            <li>Fines de semana $ <span class="precio">90</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>Bridgewood</h2>
+                    <img src="./img/Bridgewood.jpg" alt="">
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Dias de semana $ <span class="precio">160</span></li>
+                            <li>Fines de semana $ <span class="precio">60</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>Ridgewood</h2>
+                    <img src="./img/Ridgewood.jpeg" alt="">
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Dias de semana $ <span class="precio">220</span></li>
+                            <li>Fines de semana $ <span class="precio">150</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <form id="dates-form">
+            <div class="date-group">
+                <div>
+                    <label for="start-date">Fecha de Inicio:</label>
+                    <input type="date" id="start-date" name="start-date">
+                </div>
+                <div>
+                    <label for="end-date">Fecha Fin:</label>
+                    <input type="date" id="end-date" name="end-date">
+                </div>
+                <div class="combobox">
+                    <label for="users">Adultos:</label>
+                    <select name="users_count" id="users_count">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                </div>
+                <div>
+                    <button type="search" id="search">Buscar</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <section id="extras">
+        <div class="card__container-extras">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Reserva de Hoteles. Todos los derechos reservados.</p>
+    </footer>
+    <script src="./src/scripts.js"></script>
+</body>
+</html>
